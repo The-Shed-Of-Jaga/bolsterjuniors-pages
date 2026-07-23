@@ -57,6 +57,7 @@
       <h2>Introduction</h2>
       <p>Bolster Juniors ("we", "our", "us") operates the Bolster Juniors Desk application. This Privacy Policy explains how we collect, use, disclose, and safeguard your information when you use our mobile application and website.</p>
       <p>The school or educational institution you are associated with is the data controller and determines how and why your personal data is processed. Bolster Juniors acts as a data processor on behalf of the school.</p>
+      <p>This policy also covers our use of Google Sign-In for authentication. By using Google Sign-In, you agree to Google's handling of your data as described in <a href="https://policies.google.com/privacy" target="_blank">Google's Privacy Policy</a> and this policy.</p>
     </section>
 
     <section>
@@ -64,6 +65,7 @@
       <p>We collect personal information that you voluntarily provide to us when registering or using the app, including:</p>
       <ul>
         <li>Name, email address, and phone number</li>
+        <li><strong>Google account email, name, and profile picture</strong> (when you sign in using Google Sign-In)</li>
         <li>Role and class information for students and staff</li>
         <li>Address and emergency contact details</li>
         <li>Blood group (optional)</li>
@@ -72,12 +74,15 @@
         <li>Uploaded images, documents, and files attached to notices</li>
         <li>Device tokens for push notifications</li>
         <li>Diet tracking data (meal status: followed, partial, not followed)</li>
+        <li>Theme preference (light/dark mode)</li>
       </ul>
+      <p>When you sign in with Google, we receive your email address, name, and profile picture from your Google account. We only request the minimal OAuth scopes (<code>email</code>, <code>profile</code>, and <code>openid</code>) necessary for authentication. We do not access your Google Drive, Gmail, Contacts, or any other Google service data.</p>
     </section>
 
     <section>
       <h2>How We Use Your Information</h2>
       <ul>
+        <li>To authenticate your identity via <strong>Google Sign-In</strong> or email-password login</li>
         <li>To provide and maintain our services</li>
         <li>To notify you about school announcements, homework, and events</li>
         <li>To manage attendance and leave records</li>
@@ -89,13 +94,27 @@
     </section>
 
     <section>
+      <h2>Google Sign-In (Authentication)</h2>
+      <p>We offer Google Sign-In as a convenient and secure way to access your account. When you choose to sign in with Google:</p>
+      <ul>
+        <li><strong>What we collect:</strong> Your Google account email address, name, and profile picture. These are used to create and personalize your account.</li>
+        <li><strong>Why we use it:</strong> To verify your identity and provide a seamless login experience without requiring a separate password.</li>
+        <li><strong>How it works:</strong> Google authenticates your identity and provides us with a secure ID token. We validate this token with Google's servers and create or log you into your account.</li>
+        <li><strong>What we do NOT collect:</strong> We do not access your Google Drive, Gmail, contacts, calendar, search history, location, or any other personal data from your Google account beyond what is listed above.</li>
+      </ul>
+      <p>You can choose to use email-password login instead of Google Sign-In at any time. Google Sign-In is optional and not required to use the app.</p>
+      <p>You can revoke your Google account's access to our app at any time by visiting your <a href="https://myaccount.google.com/permissions" target="_blank">Google Account permissions page</a>. Please note that revoking access will not delete your account data from our systems — you must separately request account deletion through the app or our deletion page.</p>
+    </section>
+
+    <section>
       <h2>Data Sharing and Disclosure</h2>
       <p>We share your personal data only in the following circumstances:</p>
       <ul>
         <li>With family members (names shared via family link)</li>
         <li>With school owners and teachers for notification purposes</li>
         <li>With Supabase, our hosting provider, for data storage and processing</li>
-        <li>With Google (Firebase Cloud Messaging) for push notification delivery</li>
+        <li>With <strong>Google (Firebase Cloud Messaging)</strong> for push notification delivery</li>
+        <li>With <strong>Google (Google Sign-In)</strong> for authentication — we send the ID token to Google's servers for verification</li>
         <li>As required by law or to protect our legal rights</li>
       </ul>
       <p>We do not sell your personal information to third parties.</p>
@@ -104,6 +123,7 @@
     <section>
       <h2>Data Security</h2>
       <p>We are concerned about safeguarding the confidentiality of your information. We provide physical, electronic, and procedural safeguards to protect information we process and maintain. All data in transit is encrypted using HTTPS. Your credentials are stored encrypted on your device using secure storage. We limit access to this information to authorized employees and contractors who need that information in order to operate, develop or improve our Application. Please be aware that, although we endeavour to provide reasonable security for information we process and maintain, no security system can prevent all potential security breaches.</p>
+      <p>Google Sign-In uses industry-standard OAuth 2.0 protocol and Google's secure authentication infrastructure. We never see or store your Google account password.</p>
     </section>
 
     <section>
@@ -116,6 +136,8 @@
         <li><strong>Diet & Hall of Fame Records:</strong> Meal status data and derived rankings are retained for the current academic year.</li>
         <li><strong>Audit Logs:</strong> Retained for 12 months for security and compliance purposes.</li>
         <li><strong>Device Tokens:</strong> Retained only while push notifications are enabled. Immediately removed when you opt out or delete your account.</li>
+        <li><strong>Profile Picture (Avatar):</strong> Retained for the duration of your account. Deleted upon account deletion.</li>
+        <li><strong>Theme Preference:</strong> Retained for the duration of your account. Deleted upon account deletion.</li>
       </ul>
       <p>When data is no longer needed, it is securely deleted or anonymized. We do not retain your personal information beyond the stated periods unless required by applicable law.</p>
     </section>
@@ -129,6 +151,8 @@
         <li><strong>Notification Preferences:</strong> Enable or disable push notifications from the Settings screen in the app.</li>
         <li><strong>Parent Profiles:</strong> Manage linked parent profiles, add or remove students, and update emergency contact information from the Profile tab.</li>
         <li><strong>Delete Account:</strong> Permanently delete your account and all associated data from the Profile tab by selecting "Delete My Account".</li>
+        <li><strong>Revoke Google Access:</strong> Visit <a href="https://myaccount.google.com/permissions" target="_blank">Google Account permissions</a> to revoke our app's access to your Google account.</li>
+        <li><strong>Profile Picture:</strong> Your Google profile picture is synced automatically on sign-in. It is displayed as your avatar across the app and can be updated by changing your Google account picture.</li>
       </ul>
       <p>If you need assistance managing your information or encounter any issues, please contact the school administration or the owner through the app.</p>
     </section>
@@ -147,6 +171,7 @@
         <li>Access and review your personal data</li>
         <li>Update or correct your information</li>
         <li>Delete your account and associated data</li>
+        <li>Revoke Google Sign-In access to our application via your Google Account settings</li>
         <li>Opt out of push notifications at any time from Settings</li>
         <li>Withdraw consent for data processing by disabling push notifications in Settings, contacting the school administration, or deleting your account from the Profile tab</li>
       </ul>
@@ -155,6 +180,7 @@
     <section>
       <h2>Account Deletion</h2>
       <p>You can delete your account from the Profile tab by selecting "Delete My Account". This will permanently remove all your personal data from our systems. You may also request account deletion by visiting <a href="../deletion-page/">our account deletion page</a> — no login required. Upon receiving your request, we will delete your account and associated data within 30 days.</p>
+      <p>Deleting your account does not automatically revoke Google Sign-In access. To fully disconnect, visit <a href="https://myaccount.google.com/permissions" target="_blank">Google Account permissions</a> and remove Bolster Juniors Desk from the list of connected apps.</p>
     </section>
 
     <section>
@@ -169,7 +195,7 @@
 
     <section>
       <h2>Contact Us</h2>
-      <p>If you have any questions about this Privacy Policy, please contact us at <a href="mailto:bolsterjuniors@gmail.com">bolsterjuniors@gmail.com</a> or reach out to the school administration through the app.</p>
+      <p>If you have any questions about this Privacy Policy or our use of Google Sign-In, please contact us at <a href="mailto:bolsterjuniors@gmail.com">bolsterjuniors@gmail.com</a> or reach out to the school administration through the app.</p>
     </section>
   </main>
 
