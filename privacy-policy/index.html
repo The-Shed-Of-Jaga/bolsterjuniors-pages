@@ -71,10 +71,11 @@
         <li>Blood group (optional)</li>
         <li>Attendance records and leave applications</li>
         <li>Messages, announcements, and resignation communications</li>
-        <li>Uploaded images, documents, and files attached to notices</li>
+        <li>Uploaded images, documents, and files attached to notices and homework</li>
         <li>Device tokens for push notifications</li>
         <li>Diet tracking data (meal status: followed, partial, not followed)</li>
         <li>Theme preference (light/dark mode)</li>
+        <li>Language preference (English, Hindi, or Tamil)</li>
       </ul>
       <p>When you sign in with Google, we receive your email address, name, and profile picture from your Google account. We only request the minimal OAuth scopes (<code>email</code>, <code>profile</code>, and <code>openid</code>) necessary for authentication. We do not access your Google Drive, Gmail, Contacts, or any other Google service data.</p>
     </section>
@@ -85,10 +86,12 @@
         <li>To authenticate your identity via <strong>Google Sign-In</strong> or email-password login</li>
         <li>To provide and maintain our services</li>
         <li>To notify you about school announcements, homework, and events</li>
+        <li>To share homework assignments and attached files with the recipients (parents, students, and staff) they are intended for</li>
         <li>To manage attendance and leave records</li>
         <li>To facilitate communication between parents, teachers, and school management</li>
         <li>To send push notifications (with your consent obtained via the device runtime permission dialog)</li>
         <li>To generate Hall of Fame rankings based on attendance and diet data</li>
+        <li>To record read receipts for announcements and homework (whether staff or parents have viewed an item), visible only to school management</li>
         <li>To improve our application and user experience</li>
       </ul>
     </section>
@@ -112,6 +115,7 @@
       <ul>
         <li>With family members (names shared via family link)</li>
         <li>With school owners and teachers for notification purposes</li>
+        <li>With the intended recipients of homework assignments and their attached files (parents and staff of the target classes)</li>
         <li>With Supabase, our hosting provider, for data storage and processing</li>
         <li>With <strong>Google (Firebase Cloud Messaging)</strong> for push notification delivery</li>
         <li>With <strong>Google (Google Sign-In)</strong> for authentication — we send the ID token to Google's servers for verification</li>
@@ -134,10 +138,12 @@
         <li><strong>Attendance & Leave Records:</strong> Retained for the current academic year plus one additional year for reporting purposes, after which they are anonymized.</li>
         <li><strong>Communication Records:</strong> Announcements, messages, and notifications are retained for the duration of the academic year.</li>
         <li><strong>Diet & Hall of Fame Records:</strong> Meal status data and derived rankings are retained for the current academic year.</li>
+        <li><strong>Homework Attachments:</strong> Files attached to homework (images and PDFs) are automatically deleted 5 days after upload. Associated database records are removed with them.</li>
         <li><strong>Audit Logs:</strong> Retained for 12 months for security and compliance purposes.</li>
         <li><strong>Device Tokens:</strong> Retained only while push notifications are enabled. Immediately removed when you opt out or delete your account.</li>
         <li><strong>Profile Picture (Avatar):</strong> Retained for the duration of your account. Deleted upon account deletion.</li>
         <li><strong>Theme Preference:</strong> Retained for the duration of your account. Deleted upon account deletion.</li>
+        <li><strong>Language Preference:</strong> Retained for the duration of your account. Deleted upon account deletion.</li>
       </ul>
       <p>When data is no longer needed, it is securely deleted or anonymized. We do not retain your personal information beyond the stated periods unless required by applicable law.</p>
     </section>
@@ -149,7 +155,9 @@
         <li><strong>Update Profile:</strong> Navigate to the Profile tab to update your name, phone number, address, and other personal details at any time.</li>
         <li><strong>Change Password:</strong> Use the "Forgot Password" option on the sign-in page or update through your profile settings.</li>
         <li><strong>Notification Preferences:</strong> Enable or disable push notifications from the Settings screen in the app.</li>
+        <li><strong>Language:</strong> Switch the app display language (English, Hindi, or Tamil) at any time from Settings.</li>
         <li><strong>Parent Profiles:</strong> Manage linked parent profiles, add or remove students, and update emergency contact information from the Profile tab.</li>
+        <li><strong>Family Access:</strong> If all linked students are removed from a family, app access for that family is automatically restricted until a new student is added and approved by the school.</li>
         <li><strong>Delete Account:</strong> Permanently delete your account and all associated data from the Profile tab by selecting "Delete My Account".</li>
         <li><strong>Revoke Google Access:</strong> Visit <a href="https://myaccount.google.com/permissions" target="_blank">Google Account permissions</a> to revoke our app's access to your Google account.</li>
         <li><strong>Profile Picture:</strong> Your Google profile picture is synced automatically on sign-in. It is displayed as your avatar across the app and can be updated by changing your Google account picture.</li>
@@ -175,6 +183,18 @@
         <li>Opt out of push notifications at any time from Settings</li>
         <li>Withdraw consent for data processing by disabling push notifications in Settings, contacting the school administration, or deleting your account from the Profile tab</li>
       </ul>
+    </section>
+
+    <section>
+      <h2>Opt-Out Rights</h2>
+      <p>You may opt out of the following at any time:</p>
+      <ul>
+        <li><strong>Push Notifications:</strong> Go to Settings in the app and toggle off "Push Notifications". This will immediately stop all notification delivery and remove your device token from our servers.</li>
+        <li><strong>Email Communications:</strong> Contact the school administration to opt out of non-essential email communications.</li>
+        <li><strong>Data Sharing:</strong> To restrict how your data is shared within the school ecosystem, contact the school owner or administrator.</li>
+        <li><strong>Account Deletion:</strong> You may delete your entire account from the Profile tab, which removes all associated personal data from our systems.</li>
+      </ul>
+      <p>Opting out of certain services may limit your ability to use some features of the app (e.g., disabling push notifications means you will not receive real-time alerts). Your decision to opt out will not affect the lawfulness of processing based on consent before its withdrawal.</p>
     </section>
 
     <section>
