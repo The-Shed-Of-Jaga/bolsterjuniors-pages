@@ -51,7 +51,7 @@
   </header>
 
   <main>
-    <p class="updated">Last updated: August 2026</p>
+    <p class="updated">Last updated: September 2026</p>
 
     <section>
       <h2>Introduction</h2>
@@ -71,7 +71,9 @@
         <li>Blood group (optional)</li>
         <li>Attendance records and leave applications</li>
         <li>Messages, announcements, and resignation communications</li>
-        <li>Uploaded images, documents, and files attached to notices and homework</li>
+        <li>Uploaded images, documents, videos, and files attached to notices and homework</li>
+        <li>Examination records, marks, report cards, and teacher remarks about students</li>
+        <li>Survey responses and remarks submitted by parents</li>
         <li>Device tokens for push notifications</li>
         <li>Diet tracking data (meal status: followed, partial, not followed)</li>
         <li>Theme preference (light/dark mode)</li>
@@ -87,6 +89,8 @@
         <li>To provide and maintain our services</li>
         <li>To notify you about school announcements, homework, and events</li>
         <li>To share homework assignments and attached files with the recipients (parents, students, and staff) they are intended for</li>
+        <li>To manage examinations, record marks, and generate report cards for families</li>
+        <li>To collect survey responses from parents and share them with school staff for review</li>
         <li>To manage attendance and leave records</li>
         <li>To facilitate communication between parents, teachers, and school management</li>
         <li>To send push notifications (with your consent obtained via the device runtime permission dialog)</li>
@@ -116,6 +120,8 @@
         <li>With family members (names shared via family link)</li>
         <li>With school owners and teachers for notification purposes</li>
         <li>With the intended recipients of homework assignments and their attached files (parents and staff of the target classes)</li>
+        <li>With a student's family (marks, report cards, and teacher remarks for their own child)</li>
+        <li>With school owners, administrators, and teachers (survey responses and remarks for review)</li>
         <li>With Supabase, our hosting provider, for data storage and processing</li>
         <li>With <strong>Google (Firebase Cloud Messaging)</strong> for push notification delivery</li>
         <li>With <strong>Google (Google Sign-In)</strong> for authentication — we send the ID token to Google's servers for verification</li>
@@ -139,6 +145,10 @@
         <li><strong>Communication Records:</strong> Announcements, messages, and notifications are retained for the duration of the academic year.</li>
         <li><strong>Diet & Hall of Fame Records:</strong> Meal status data and derived rankings are retained for the current academic year.</li>
         <li><strong>Homework Attachments:</strong> Files attached to homework (images and PDFs) are automatically deleted 5 days after upload. Associated database records are removed with them.</li>
+        <li><strong>Notice Attachments:</strong> Videos attached to notices are automatically deleted 5 days after upload. Images and PDFs are removed when the notice expires (15 days after posting).</li>
+        <li><strong>Examination Records:</strong> Exam records, marks, and report cards are retained for 12 months plus a 1-month grace period (13 months total), after which they are permanently deleted.</li>
+        <li><strong>Report Card Remarks:</strong> Teacher remarks about a student are removed together with the related exam or when the student is deleted.</li>
+        <li><strong>Survey Responses:</strong> Survey answers and parent remarks are retained while the related survey exists, and are removed when the exam, survey, or student is deleted.</li>
         <li><strong>Audit Logs:</strong> Retained for 12 months for security and compliance purposes.</li>
         <li><strong>Device Tokens:</strong> Retained only while push notifications are enabled. Immediately removed when you opt out or delete your account.</li>
         <li><strong>Profile Picture (Avatar):</strong> Retained for the duration of your account. Deleted upon account deletion.</li>
@@ -168,7 +178,7 @@
     <section>
       <h2>Children</h2>
       <p>Our application is used by schools and educational institutions to manage communication with parents, teachers, and staff. Only adults (parents, teachers, and school administrators) have login accounts. We do not create accounts for or knowingly collect personal information directly from children under the age of 13.</p>
-      <p>Student information such as name, class, and attendance records is provided to us by the school or by parents/guardians. The school is responsible for obtaining parental consent for the collection and use of student data.</p>
+      <p>Student information such as name, class, attendance records, and academic records (marks and report cards) is provided to us by the school or by parents/guardians. The school is responsible for obtaining parental consent for the collection and use of student data.</p>
       <p>If you are a parent or guardian and believe your child has provided us with personal information without your consent, please contact us at <a href="mailto:bolsterjuniors@gmail.com">bolsterjuniors@gmail.com</a>. We will delete any such information from our files within a reasonable time.</p>
     </section>
 
