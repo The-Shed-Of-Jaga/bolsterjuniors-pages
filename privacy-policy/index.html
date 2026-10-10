@@ -51,7 +51,7 @@
   </header>
 
   <main>
-    <p class="updated">Last updated: September 2026</p>
+    <p class="updated">Last updated: October 2026</p>
 
     <section>
       <h2>Introduction</h2>
@@ -69,15 +69,17 @@
         <li>Role and class information for students and staff</li>
         <li>Address and emergency contact details</li>
         <li>Blood group (optional)</li>
+        <li>Date of birth (optional) for students and staff, used to display birthday greetings, including a branch-wide greeting posted to the Notice Board</li>
         <li>Attendance records and leave applications</li>
+        <li>School transport (cab) data: routes, stops, your child's route and stop assignments, daily pick-up/drop/absence records, recorded route start times, and cab driver and in-charge name and phone details</li>
         <li>Messages, announcements, and resignation communications</li>
         <li>Uploaded images, documents, videos, and files attached to notices and homework</li>
         <li>Examination records, marks, report cards, and teacher remarks about students</li>
         <li>Survey responses and remarks submitted by parents</li>
         <li>Device tokens for push notifications</li>
-        <li>Diet tracking data (meal status: followed, partial, not followed)</li>
+        <li>Diet tracking data (meal status: followed, partial, healthy, not followed)</li>
         <li>Theme preference (light/dark mode)</li>
-        <li>Language preference (English, Hindi, or Tamil)</li>
+        <li>Language preference (English, Hindi, Tamil, or Kannada)</li>
       </ul>
       <p>When you sign in with Google, we receive your email address, name, and profile picture from your Google account. We only request the minimal OAuth scopes (<code>email</code>, <code>profile</code>, and <code>openid</code>) necessary for authentication. We do not access your Google Drive, Gmail, Contacts, or any other Google service data.</p>
     </section>
@@ -92,6 +94,7 @@
         <li>To manage examinations, record marks, and generate report cards for families</li>
         <li>To collect survey responses from parents and share them with school staff for review</li>
         <li>To manage attendance and leave records</li>
+        <li>To manage school cab routes, assign children to routes and stops, record daily cab pick-up/drop status, show live cab status to parents and staff, and generate monthly cab reports</li>
         <li>To facilitate communication between parents, teachers, and school management</li>
         <li>To send push notifications (with your consent obtained via the device runtime permission dialog)</li>
         <li>To generate Hall of Fame rankings based on attendance and diet data</li>
@@ -122,6 +125,7 @@
         <li>With the intended recipients of homework assignments and their attached files (parents and staff of the target classes)</li>
         <li>With a student's family (marks, report cards, and teacher remarks for their own child)</li>
         <li>With school owners, administrators, and teachers (survey responses and remarks for review)</li>
+        <li>With a student's family and school staff (school cab route, stop, driver/in-charge contact, and daily pick-up/drop status)</li>
         <li>With Supabase, our hosting provider, for data storage and processing</li>
         <li>With <strong>Google (Firebase Cloud Messaging)</strong> for push notification delivery</li>
         <li>With <strong>Google (Google Sign-In)</strong> for authentication — we send the ID token to Google's servers for verification</li>
@@ -142,6 +146,7 @@
       <ul>
         <li><strong>Account Data:</strong> Retained for the duration of your active account. Upon account deletion, all personal data is permanently removed within 30 days.</li>
         <li><strong>Attendance & Leave Records:</strong> Retained for the current academic year plus one additional year for reporting purposes, after which they are anonymized.</li>
+        <li><strong>School Cab Records:</strong> Routes and stop assignments are retained while the route is active. Daily cab pick-up/drop records and recorded route start times are retained for 13 months (the current month plus the previous 12 complete months), after which they are permanently deleted.</li>
         <li><strong>Communication Records:</strong> Announcements, messages, and notifications are retained for the duration of the academic year.</li>
         <li><strong>Diet & Hall of Fame Records:</strong> Meal status data and derived rankings are retained for the current academic year.</li>
         <li><strong>Homework Attachments:</strong> Files attached to homework (images and PDFs) are automatically deleted 5 days after upload. Associated database records are removed with them.</li>
